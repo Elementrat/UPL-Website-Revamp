@@ -1,0 +1,45 @@
+version=pmwiki-2.2.36 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0
+author=moench
+charset=UTF-8
+csum=
+ctime=1331075822
+host=127.0.0.1
+name=Projects.Projects
+rev=11
+targets=Projects.Featured
+text=[[Projects.Featured | List of projects featured on the front page]]%0a%0a@Project First%0a@end%0a%0a@Project TestName%0a@short: The short text.%0a@description: This is a really cool project, one that can be used everywhere.%0a@nextKey: What is this?%0a@end%0a%0a@Project next%0a@no: yes%0a@end
+time=1332886713
+author:1332886713=moench
+diff:1332886713:1332884917:=3,6c3%0a%3c @Project First%0a%3c @end%0a%3c %0a%3c @Project TestName%0a---%0a> @Project Test Name%0a8c5,8%0a%3c @description: This is a really cool project, one that can be used everywhere.%0a---%0a> @description: This is a really cool project, one that can be used everywhere. \%0a> another line \%0a> yet another line \%0a> end%0a
+host:1332886713=127.0.0.1
+author:1332884917=moench
+diff:1332884917:1331244839:=1,2c1,2%0a%3c [[Projects.Featured | List of projects featured on the front page]]%0a%3c %0a---%0a> [[Projects.Featured]]%0a> %0a4,5c4,5%0a%3c @short: The short text.%0a%3c @description: This is a really cool project, one that can be used everywhere. \%0a---%0a> short: The short text.%0a> description: This is a really cool project, one that can be used everywhere. \%0a9,11c9,10%0a%3c @nextKey: What is this?%0a%3c @end%0a%3c %0a---%0a> nextKey: What is this?%0a> %0a13,14c12,13%0a%3c @no: yes%0a%3c @end%0a\ No newline at end of file%0a---%0a> no: yes%0a> %0a
+host:1332884917=127.0.0.1
+author:1331244839=moench
+diff:1331244839:1331244573:=1c1%0a%3c [[Projects.Featured]]%0a---%0a> Use this one actaully%0a
+host:1331244839=127.0.0.1
+author:1331244573=moench
+diff:1331244573:1331244333:=11c11%0a%3c @Project next%0a---%0a> @Project next\%0a13a14,16%0a> sdfsdf%0a> %0a> next%0a
+host:1331244573=127.0.0.1
+author:1331244333=moench
+diff:1331244333:1331168264:=4d3%0a%3c short: The short text.%0a
+host:1331244333=127.0.0.1
+author:1331168264=moench
+diff:1331168264:1331082401:=3,15c3,5%0a%3c @Project Test Name%0a%3c description: This is a really cool project, one that can be used everywhere. \%0a%3c another line \%0a%3c yet another line \%0a%3c end%0a%3c nextKey: What is this?%0a%3c %0a%3c @Project next\%0a%3c no: yes%0a%3c %0a%3c sdfsdf%0a%3c %0a%3c next%0a---%0a> (:project name="Hello":)%0a> %0a> (:project name="Goodbye":)%0a\ No newline at end of file%0a
+host:1331168264=127.0.0.1
+author:1331082401=moench
+diff:1331082401:1331082285:=3,5c3%0a%3c (:project name="Hello":)%0a%3c %0a%3c (:project name="Goodbye":)%0a\ No newline at end of file%0a---%0a> (:project name="Hello":)%0a\ No newline at end of file%0a
+host:1331082401=127.0.0.1
+author:1331082285=moench
+diff:1331082285:1331082202:=
+host:1331082285=127.0.0.1
+author:1331082202=moench
+diff:1331082202:1331081108:=3c3%0a%3c (:project name="Hello":)%0a\ No newline at end of file%0a---%0a> (:project:)%0a\ No newline at end of file%0a
+host:1331082202=127.0.0.1
+author:1331081108=moench
+diff:1331081108:1331075822:=1,3c1%0a%3c Use this one actaully%0a%3c %0a%3c (:project:)%0a\ No newline at end of file%0a---%0a> Use this one actaully%0a\ No newline at end of file%0a
+host:1331081108=127.0.0.1
+author:1331075822=moench
+diff:1331075822:1331075822:=1d0%0a%3c Use this one actaully%0a\ No newline at end of file%0a
+host:1331075822=127.0.0.1
