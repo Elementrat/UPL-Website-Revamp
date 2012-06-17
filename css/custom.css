@@ -1,5 +1,7 @@
 @charset "utf-8";
-/* CSS Document */
+/*
+ * For the love of god, Alex, won't you indent (from time to time)?
+ */
 
 *{
 margin:0px;	
@@ -44,7 +46,7 @@ color:#FFF;
 
 #headerlogo{
 float:left;	
-background:url(../img/logosmall.jpg);
+background:url(../img/logosmall.png);
 width:150px;
 height:59px;
 }
@@ -58,12 +60,12 @@ margin-bottom:5px;
 #menutop li{
 float:left;
 list-style:none;
-margin-left:10px;	
+margin-left:10px;
+margin-top: 2px;
 }
 
 #menutop li a{
 padding:10px 5px;
-/*background:#333;*/
 cursor:pointer;
 color:#FFF;
 text-decoration:none;
@@ -83,6 +85,12 @@ width:1024px;
 margin:0px auto;
 width:1024px;
 
+}
+
+#content {
+	margin: 0px auto;
+	width: 1024px;
+	min-height: 20em;
 }
 
 #quote{
@@ -131,27 +139,32 @@ width:500px;
 }
 
 
-#footer{
-width:100%;
-height:155px;
-background:#444;
-border-top:2px solid #444;
+#footer {
+	width: 100%;
+	height: 155px;
+	background: #444;
+	border-top: 2px solid #444;
+	font-size: 15pt;
 }
 
-#footer-inner{
-width:1024px;
-color:#FFF;
-margin:0px auto;
-color:#FFF;
+#footer-inner {
+	width: 1024px;
+	margin: 0px auto;
+	color: #FFF;
 }
 
-.footerlist{
-margin-top:0px;
-list-style:none;
+.footerlist {
+	margin-top: 0px;
+	list-style: none;
+	float: left;
 }
 
-.footerlist a{
-color:#FFF;	
+.footerlist a {
+	color: #FFF;	
+}
+
+.footerlist form {
+	font-size: 12pt;
 }
 
 .box{
