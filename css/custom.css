@@ -167,6 +167,12 @@ width:500px;
 	font-size: 12pt;
 }
 
+#footer-copyright {
+	font-size: 10pt;
+	color: #AAA;
+	float: right;
+}
+
 .box{
 width:200px;
 height:125px;
