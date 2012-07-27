@@ -81,7 +81,7 @@ function PrintDiff($pagename) {
     $diffauthor = @$page["author:$diffgmt"]; 
     if (!$diffauthor) @$diffauthor=$page["host:$diffgmt"];
     if (!$diffauthor) $diffauthor="unknown";
-    $FmtV['$DiffChangeSum'] = htmlspecialchars(@$page["csum:$diffgmt"]);
+    $FmtV['$DiffChangeSum'] = PHSC(@$page["csum:$diffgmt"]);
     $FmtV['$DiffHost'] = @$page["host:$diffgmt"];
     $FmtV['$DiffAuthor'] = $diffauthor;
     $FmtV['$DiffId'] = $k;
@@ -127,7 +127,7 @@ function DiffHTML($pagename, $diff) {
             .$DiffRenderSourceFunction($in, $out, 0)
             ."</div>";
         else $html .= MarkupToHTML($pagename,
-          preg_replace('/\\(:.*?:\\)/e',"Keep(htmlspecialchars(PSS('$0')))", join("\n",$in)));
+          preg_replace('/\\(:.*?:\\)/e',"Keep(PHSC(PSS('$0')))", join("\n",$in)));
       }
       if ($match[4]=='d' || $match[4]=='c') {
         $txt = str_replace('line',$lines,$DiffAddFmt[$match[4]]);
@@ -138,7 +138,7 @@ function DiffHTML($pagename, $diff) {
             .$DiffRenderSourceFunction($in, $out, 1)
             ."</div>";
         else $html .= MarkupToHTML($pagename,
-          preg_replace('/\\(:.*?:\\)/e',"Keep(htmlspecialchars(PSS('$0')))",join("\n",$out)));
+          preg_replace('/\\(:.*?:\\)/e',"Keep(PHSC(PSS('$0')))",join("\n",$out)));
       }
       $html .= FmtPageName($DiffEndDelAddFmt,$pagename);
     }
@@ -161,7 +161,7 @@ function DiffRenderSource($in, $out, $which) {
   global $WordDiffFunction, $EnableDiffInline;
   if (!IsEnabled($EnableDiffInline, 1)) {
     $a = $which? $out : $in;
-    return str_replace("\n","<br />",htmlspecialchars(join("\n",$a)));  
+    return str_replace("\n","<br />",PHSC(join("\n",$a)));  
   }
   $countdifflines = abs(count($in)-count($out));
   $lines = $cnt = $x2 = $y2 = array();
@@ -177,7 +177,7 @@ function DiffRenderSource($in, $out, $which) {
   }
   $z = $WordDiffFunction(implode("\n", $x2), implode("\n", $y2));
 
-  $z2 = array_map('htmlspecialchars', ($which? $y2 : $x2));
+  $z2 = array_map('PHSC', ($which? $y2 : $x2));
   array_unshift($z2, '');
   foreach (explode("\n", $z) as $zz) {
     if (preg_match('/^(\\d+)(,(\\d+))?([adc])(\\d+)(,(\\d+))?/',$zz,$m)) {

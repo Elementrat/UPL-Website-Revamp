@@ -90,7 +90,7 @@ width:1024px;
 #content {
 	margin: 0px auto;
 	width: 1024px;
-	min-height: 20em;
+	min-height: 30em;
 }
 
 #quote{
@@ -262,3 +262,4 @@ height:150px;
 .headergrey{
 font-size:36px;
 }
+

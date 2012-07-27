@@ -4,24 +4,79 @@ loadTemplate($pagename);
 
 function loadTemplate($page)
 {
-    global $SkinDir;
-    if ($page == 'Main.Test') // TODO For testing purposes
-    {
-        $template = 'mainpage.tmpl';
-        
-        // No need to include this stuff for every page load; include it here
-        include_once('cookbook/mainpage.php');
+	global $SkinDir;
+	if ($page == 'Main.Test') // TODO For testing purposes
+	{
+		// No need to include this stuff for every page load; include it here
+		include_once('cookbook/mainpage.php');
 
-        // Load and generate the HTML code for upcoming UPL events
-        $GLOBALS['QuoteHtml'] = loadQuote();
-        $GLOBALS['ProjectsHtml'] = generateProjectsHtml();
-        $GLOBALS['EventsHtml'] = generateEventsHtml();
-    }
-    else
-    {
-        $template = 'upl.tmpl';
-    }
-    LoadPageTemplate($page, "$SkinDir/$template");
+		// Load and generate the HTML code for upcoming UPL events
+		$GLOBALS['QuoteHtml'] = loadQuote();
+		$GLOBALS['ProjectsHtml'] = generateProjectsHtml();
+		$GLOBALS['EventsHtml'] = generateEventsHtml();
+		
+		$GLOBALS['PageContents'] = getIncludeContents("$SkinDir/mainpage.tmpl.php");
+	}
+	else
+	{
+		$GLOBALS['PageContents'] = '</div>';
+	}
+	
+	LoadPageTemplate($page, "$SkinDir/upl.tmpl");
+}
+
+function includeTitle($page, $titleSpaced)
+{
+	if ($page == 'Main.Test')
+	{
+	}
+	else
+	{
+		// Some boilerplate HTML that goes before a normal page
+		$before = <<<EOT
+<div id = "wrappertop">
+	<div class = "padding5">
+		<div class = "bigheading">
+EOT;
+
+		$after = <<<EOT
+		</div>
+		<div class = "verticalspacer15"></div>
+	</div>
+</div>
+<div class = "verticalspacer30"></div>
+
+</div>
+
+<div id = "content">
+EOT;
+
+		echo $before;
+		
+		// Determine whether or not to show the group
+		$names = explode('.', $page);
+		if (strtolower($names[0]) === strtolower($names[1]))
+		{
+			echo $titleSpaced;
+		}
+		else
+		{
+			echo "${names[0]} . $titleSpaced";
+		}
+		
+		echo $after;
+	}
+}
+
+function afterPageText($page, $titleSpaced)
+{
+	// TODO ?
+	/*if ($page == 'Main.Test')
+	{
+	}
+	else
+	{
+	}*/
 }
 
 function generateProjectsHtml()
@@ -88,5 +143,16 @@ function generateEventsHtml()
 function formatDate($start, $end)
 {
     return $start->format("l, F j") . " at " . $start->format("g:i A");
+}
+
+function getIncludeContents($filename)
+{
+    if (is_file($filename))
+    {
+        ob_start();
+        include $filename;
+        return ob_get_clean();
+    }
+    return '';
 }
 

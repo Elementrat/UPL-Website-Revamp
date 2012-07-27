@@ -1,0 +1,15 @@
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+author=moench
+charset=UTF-8
+csum=
+ctime=1343341348
+host=127.0.0.1
+name=Main.Temp
+rev=1
+targets=Main.Test,Projects.Projects,Coords.Coords,Main.Quotes
+text=Welcome to the beta version of the new UPL website%0a%0a[[Test | The new home page]]%0a%0a[[Projects.Projects | List of current projects]]%0a%0a[[Coords.Coords | List of coords]]%0a%0a[[Main.Quotes | List of quotes]]
+time=1343341348
+author:1343341348=moench
+diff:1343341348:1343341348:=1,9d0%0a%3c Welcome to the beta version of the new UPL website%0a%3c %0a%3c [[Test | The new home page]]%0a%3c %0a%3c [[Projects.Projects | List of current projects]]%0a%3c %0a%3c [[Coords.Coords | List of coords]]%0a%3c %0a%3c [[Main.Quotes | List of quotes]]%0a\ No newline at end of file%0a
+host:1343341348=127.0.0.1

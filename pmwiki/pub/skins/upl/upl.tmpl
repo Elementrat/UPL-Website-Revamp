@@ -6,57 +6,58 @@
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/b/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>{$Title} - $WikiTitle $ActionTitle</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<title>{$Titlespaced} - $WikiTitle $ActionTitle</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <!-- CSS: implied media=all -->
-  <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="/css/style.css">
-  
-  
-  <!-- end CSS-->
+	<!-- CSS: implied media=all -->
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="/css/style.css">
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+	<!-- end CSS-->
 
-  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
-  <link href="/css/custom.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css'>
-  <!--HTMLHeader-->
+	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+	<!-- All JavaScript at the bottom, except for Modernizr / Respond.
+	   Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+	   For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
+	<link href="/css/custom.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css'>
+	
+<!--HTMLHeader-->
+
 </head>
 
 <body>
 
 <!--PageHeaderFmt-->
 
-<div id = "navtop">
-<div id = "navtop-inner">
-<div id = "headerlogo">
+<div id="navtop">
+<div id="navtop-inner">
 
-</div>
-<ul id = "menutop">
-<li> <a href="{$ScriptUrl}">Home </a> </li>
-<li> <a href="/Events">Events </a> </li>
-<li> <a href="/History">History </a> </li>
-<li> <a href="/Tutorials">Tutorials</a>  </li>
-<li> <a href="/Projects">Projects</a>  </li>
-<li> <a href="/Library">Library</a>  </li>
-<li> <a href="/Coords">Coordinators</a>  </li>
-<li> <a href="/Coords/Hours">Hours </a> </li>
+<div id="headerlogo"></div>
+
+<ul id="menutop">
+	<li><a href="{$ScriptUrl}">Home</a></li>
+	<li><a href="/Events">Events</a></li>
+	<li><a href="/History">History</a></li>
+	<li><a href="/Tutorials">Tutorials</a></li>
+	<li><a href="/Projects">Projects</a></li>
+	<li><a href="/Library">Library</a></li>
+	<li><a href="/Coords">Coords</a></li>
+	<li><a href="/Coords/Hours">Hours</a></li>
 </ul>
 
 </div>
@@ -64,57 +65,100 @@
 
 <!--/PageHeaderFmt-->
 
-<!--PageTitleFmt-->
-  <div class = "bigheading">{$Title}</div>
+<!--function:includeTitle {$Titlespaced}-->
+
 <!--PageText-->
+
+<!--function:afterPageText {$Titlespaced}-->
+$PageContents
 
 <!--PageFooterFmt-->
 
-<div id = "footer">
-<div id = "footer-inner">
-<div class = "padding5">
-<ul class = "footerlist">
-<li class = "footerhead"> Contact </li>
-<li> <a> Facebook </a></li>
-<li> <a> Email </a> </li>
+<div id="footer">
+<div id="footer-inner">
+<div class="padding5">
+
+<ul class="footerlist">
+	<li class="footerhead">People</li>
+	<li><a href="?">Coords</a></li>
+	<li><a href="?">Hours</a></li>
+	<li><a href="?">History</a></li>
+</ul>
+
+<ul class="footerlist">
+	<li class="footerhead">Places</li>
+	<li><a href="?">Location</a></li>
+	<li><a href="?">Events</a></li>
+	<li><a href="?">Webcam</a></li>
+</ul>
+
+<ul class="footerlist">
+	<li class="footerhead">Things</li>
+	<li><a href="?">Projects</a></li>
+	<li><a href="?">Tutorials</a></li>
+	<li><a href="?">Library</a></li>
+</ul>
+
+<ul class="footerlist">
+	<li class="footerhead">Contact</li>
+	<li><a href="https://www.facebook.com/groups/UWUPL/" target="_blank">Facebook</a></li>
+	<li><script type="text/javascript">eval(unescape("%71%65%65%67%70%34%39%3d%5b%27%25%37%35%25%37%30%25%36%63%25%32%64%25%36%33%25%36%66%25%36%66%25%37%32%25%36%34%25%37%33%27%2c%5b%27%25%36%35%25%36%34%25%37%35%27%2c%27%25%37%37%25%36%39%25%37%33%25%36%33%27%2c%27%25%36%33%25%37%33%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%68%69%68%64%67%30%38%3d%27%45%6d%61%69%6c%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%68%69%68%64%67%30%38%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%71%65%65%67%70%34%39%29%29%3b"));</script></li>
+</ul>
+
+<ul class="footerlist">
+	<li class="footerhead">Wiki</li>
+	<li><a href="?action=edit">Edit</a></li>
+	<li><a href="?action=diff">History</a></li>
+	<li><a href="?action=upload">Attach</a></li> <!-- TODO Only if this is allowed for this page -->
+	<li><a href="?action=logout">Logout</a></li>  <!-- TODO Only if the user is logged in -->
+</ul>
+
+<ul class="footerlist">
+	<li class="footerhead">Search</li>
+	<li>
+		<form action="/" method="GET">
+			<input type='hidden' name='n' value='{$FullName}'/>
+    		<input type='hidden' name='action' value='search'/>
+			<input type="text" name='q' value='' size="15"/>
+		</form>
+	</li>
 </ul>
 
 </div>
 </div>
 </div>
 
-  <!--HTMLFooter-->
+<!--HTMLFooter-->
 
-  <!-- JavaScript at the bottom for fast page loading -->
+	<!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="/js/plugins.js"></script>
-  <script defer src="/js/script.js"></script>
-  <!-- end scripts-->
-
-	
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+	<!-- scripts concatenated and minified via ant build script-->
+	<script defer src="/js/plugins.js"></script>
+	<script defer src="/js/script.js"></script>
+	<!-- end scripts-->
+
+
+	<!-- Change UA-XXXXX-X to be your site's ID -->
+	<script>
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
+	</script>
+
+
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
   
 </body>
 </html>
-
 

@@ -1,9 +1,4 @@
 <?php if (!defined('PmWiki')) exit();
-
-/*
-    This file has been modified by the UPL.
-*/
-
 /*  Copyright 2005-2010 Patrick R. Michaud (pmichaud@pobox.com)
     This file is part of PmWiki; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published
@@ -54,7 +49,6 @@ function AuthUserId($pagename, $id, $pw=NULL) {
   SDVA($AuthUserFunctions, array(
     'htpasswd' => 'AuthUserHtPasswd',
     'ldap' => 'AuthUserLDAP',
-    'pam' => 'AuthUserPAM',
 #    'mysql' => 'AuthUserMySQL',
     $id => 'AuthUserConfig'));
 
@@ -172,13 +166,6 @@ function AuthUserLDAP($pagename, $id, $pw, $pwlist) {
     ldap_close($ds);
   }
   return false;
-}
-
-function AuthUserPAM($pagename, $id, $pw, $pwlist) {
-    if (strlen($id) <= 2 || strlen($pw) <= 2) {
-        return false;
-    }
-    return pam_auth($id, $pw) && in_array($id, $pwlist);
 }
 
 

@@ -61,7 +61,7 @@ function addProperty(&$s, $argument, $type)
     if (isset($s['prop']))
         $properties = $s['prop'];
         
-    if (preg_match("/^$type\\s*([^\\s:]*?)\\s*$/i", $argument, $matches) > 0)
+    if (preg_match("/^$type\\s*(.*?)\\s*$/i", $argument, $matches) > 0)
     {
         if ($current)
         {

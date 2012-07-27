@@ -170,7 +170,7 @@ function InputDefault($pagename, $type, $args) {
     $req = array_merge($_GET, $_POST);
     foreach($req as $k => $v) 
       if (!isset($InputValues[$k])) 
-        $InputValues[$k] = htmlspecialchars(stripmagic($v), ENT_NOQUOTES);
+        $InputValues[$k] = PHSC(stripmagic($v), ENT_NOQUOTES);
   }
   $source = @$args['source'];
   if ($source) {
@@ -183,7 +183,7 @@ function InputDefault($pagename, $type, $args) {
           foreach($match as $m)
             if (!isset($InputValues['ptv_'.$m[2]]))
               $InputValues['ptv_'.$m[2]] = 
-                htmlspecialchars(Qualify($source, $m[3]), ENT_NOQUOTES);
+                PHSC(Qualify($source, $m[3]), ENT_NOQUOTES);
     }
   }
   return '';
@@ -306,7 +306,7 @@ SDVA($InputTags['e_author'], array(
 SDVA($InputTags['e_changesummary'], array(
   ':html' => "<input type='text' \$InputFormArgs />",
   'name' => 'csum', 'size' => '60', 'maxlength' => '100',
-  'value' => htmlspecialchars(stripmagic(@$_POST['csum']), ENT_QUOTES)));
+  'value' => PHSC(stripmagic(@$_POST['csum']), ENT_QUOTES)));
 SDVA($InputTags['e_minorcheckbox'], array(
   ':html' => "<input type='checkbox' \$InputFormArgs />",
   'name' => 'diffclass', 'value' => 'minor'));

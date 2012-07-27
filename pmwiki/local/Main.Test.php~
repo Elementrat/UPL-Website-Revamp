@@ -1,5 +1,0 @@
-<?php
-include_once("cookbook/mainpage.php");
-
-$Skin = 'upl';
-

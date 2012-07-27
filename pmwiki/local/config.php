@@ -28,8 +28,11 @@ $EnablePathInfo = 1;
 ## If you want to have a custom skin, then set $Skin to the name
 ## of the directory (in pub/skins/) that contains your skin files.
 ## See PmWiki.Skins and Cookbook.Skins.
-$Skin = 'pmwiki';
+$Skin = 'upl';
 $ActionSkin['edit'] = 'pmwiki';
+$ActionSkin['diff'] = 'pmwiki';
+$ActionSkin['upload'] = 'pmwiki';
+$ActionSkin['attr'] = 'pmwiki';
 
 ## You'll probably want to set an administrative password that you
 ## can use to get into password-protected pages.  Also, by default 
@@ -43,7 +46,7 @@ $DefaultPasswords['admin'] = crypt('secretasdfghjk');
 include_once("scripts/xlpage-utf-8.php");
 
 
-include_once("scripts/authuser.php");
+include_once("cookbook/authuser.php");
 $Author = $AuthId;
 
 ## Only logged-in people can edit
@@ -75,7 +78,7 @@ $DefaultPasswords['edit'] = 'id:*';
 ##  You'll also need to set a default upload password, or else set
 ##  passwords on individual groups and pages.  For more information
 ##  see PmWiki.UploadsAdmin.
-# $EnableUpload = 1;
+$EnableUpload = 0;
 $DefaultPasswords['upload'] = 'id:*';
 
 ##  Setting $EnableDiag turns on the ?action=diag and ?action=phpinfo

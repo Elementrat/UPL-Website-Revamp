@@ -20,7 +20,7 @@ function HandleCrypt($pagename, $auth='read') {
     "<form action='{\$ScriptUrl}' method='POST'><p>
       Enter password to encrypt: 
       <input type='text' name='passwd' value='"
-      . htmlspecialchars($passwd, ENT_QUOTES) ."' />
+      . PHSC($passwd, ENT_QUOTES) ."' />
       <input type='submit' />
       <input type='hidden' name='n' value='{\$FullName}' />
       <input type='hidden' name='action' value='crypt' /></p></form>",

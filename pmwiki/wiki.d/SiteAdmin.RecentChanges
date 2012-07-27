@@ -1,9 +1,9 @@
 version=pmwiki-2.2.36 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
 charset=UTF-8
 ctime=1330564574
 host=127.0.0.1
 name=SiteAdmin.RecentChanges
-rev=12
-text=* [[SiteAdmin/AuthUser]]  . . . March 08, 2012, at 03:50 PM by [[~moench]]: [==]%0a
-time=1331243416
+rev=13
+text=* [[SiteAdmin/AuthUser]]  . . . May 01, 2012, at 04:58 PM by [[~moench]]: [==]%0a
+time=1335909511

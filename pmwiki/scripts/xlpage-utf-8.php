@@ -32,7 +32,7 @@ if (!$pagename &&
           $_SERVER['REQUEST_URI'],$match))
     $pagename = urldecode($match[1]);
 $pagename = preg_replace('!/+$!','',$pagename);
-$FmtPV['$RequestedPage'] = "'".htmlspecialchars($pagename, ENT_QUOTES)."'";
+$FmtPV['$RequestedPage'] = "'".PHSC($pagename, ENT_QUOTES)."'";
 
 $GroupPattern = '[\\w\\x80-\\xfe]+(?:-[\\w\\x80-\\xfe]+)*';
 $NamePattern = '[\\w\\x80-\\xfe]+(?:-[\\w\\x80-\\xfe]+)*';

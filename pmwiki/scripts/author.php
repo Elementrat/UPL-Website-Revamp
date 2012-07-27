@@ -26,7 +26,7 @@ if (!isset($Author)) {
   } elseif (@$_COOKIE[$AuthorCookie]) {
     $x = stripmagic(@$_COOKIE[$AuthorCookie]);
   } else $x = @$AuthId;
-  $Author = htmlspecialchars(preg_replace("/[^$AuthorNameChars]/", '', $x), 
+  $Author = PHSC(preg_replace("/[^$AuthorNameChars]/", '', $x), 
                 ENT_COMPAT);
 }
 if (!isset($AuthorPage)) $AuthorPage = 

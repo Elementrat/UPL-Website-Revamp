@@ -136,15 +136,16 @@ function LinkUpload($pagename, $imap, $path, $alt, $txt, $fmt=NULL) {
     $path = $match[2];
   }
   $upname = MakeUploadName($pagename, $path);
+  $encname = rawurlencode($upname);
   $filepath = FmtPageName("$UploadFileFmt/$upname", $pagename);
   $FmtV['$LinkUpload'] = 
-    FmtPageName("\$PageUrl?action=upload&amp;upname=$upname", $pagename);
+    FmtPageName("\$PageUrl?action=upload&amp;upname=$encname", $pagename);
   $FmtV['$LinkText'] = $txt;
   if (!file_exists($filepath)) 
     return FmtPageName($LinkUploadCreateFmt, $pagename);
   $path = PUE(FmtPageName(IsEnabled($EnableDirectDownload, 1) 
-                            ? "$UploadUrlFmt$UploadPrefixFmt/$upname"
-                            : "{\$PageUrl}?action=download&amp;upname=$upname",
+                            ? "$UploadUrlFmt$UploadPrefixFmt/$encname"
+                            : "{\$PageUrl}?action=download&amp;upname=$encname",
                           $pagename));
   return LinkIMap($pagename, $imap, $path, $alt, $txt, $fmt);
 }
@@ -167,10 +168,10 @@ function HandleUpload($pagename, $auth = 'upload') {
     $HandleUploadFmt,$PageStartFmt,$PageEndFmt,$PageUploadFmt;
   UploadAuth($pagename, $auth, 1);
   $FmtV['$UploadName'] = MakeUploadName($pagename,@$_REQUEST['upname']);
-  $upresult = htmlspecialchars(@$_REQUEST['upresult']);
-  $uprname = htmlspecialchars(@$_REQUEST['uprname']);
-  $FmtV['$upext'] = htmlspecialchars(@$_REQUEST['upext']);
-  $FmtV['$upmax'] = htmlspecialchars(@$_REQUEST['upmax']);
+  $upresult = PHSC(@$_REQUEST['upresult']);
+  $uprname = PHSC(@$_REQUEST['uprname']);
+  $FmtV['$upext'] = PHSC(@$_REQUEST['upext']);
+  $FmtV['$upmax'] = PHSC(@$_REQUEST['upmax']);
   $FmtV['$UploadResult'] = ($upresult) ?
     FmtPageName("<i>$uprname</i>: $[UL$upresult]",$pagename) : '';
   SDV($HandleUploadFmt,array(&$PageStartFmt,&$PageUploadFmt,&$PageEndFmt));
@@ -312,18 +313,18 @@ function FmtUploadList($pagename, $args) {
   while (($file=readdir($dirp)) !== false) {
     if ($file{0} == '.') continue;
     if (@$matchext && !preg_match(@$matchext, $file)) continue;
-    $filelist[$file] = $file;
+    $filelist[$file] = rawurlencode($file);
   }
   closedir($dirp);
   $out = array();
   natcasesort($filelist);
   $overwrite = '';
-  foreach($filelist as $file=>$x) {
-    $name = PUE("$uploadurl$file");
+  foreach($filelist as $file=>$encfile) {
+    $name = PUE("$uploadurl$encfile");
     $stat = stat("$uploaddir/$file");
     if ($EnableUploadOverwrite) 
       $overwrite = FmtPageName("<a rel='nofollow' class='createlink'
-        href='\$PageUrl?action=upload&amp;upname=$file'>&nbsp;&Delta;</a>", 
+        href='\$PageUrl?action=upload&amp;upname=$encfile'>&nbsp;&Delta;</a>", 
         $pagename);
     $out[] = "<li> <a href='$name'>$file</a>$overwrite ... ".
       number_format($stat['size']) . " bytes ... " . 

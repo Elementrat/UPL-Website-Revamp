@@ -61,7 +61,7 @@ function ReadTrail($pagename, $trailname) {
   $trailtext = Qualify($trailname, $trailtext);
   $t = array();
   $n = 0;
-  foreach(explode("\n", htmlspecialchars(@$trailtext, ENT_NOQUOTES)) 
+  foreach(explode("\n", PHSC(@$trailtext, ENT_NOQUOTES)) 
           as $x) {
     $x = preg_replace("/\\[\\[([^\\]]*)-&gt;([^\\]]*)\\]\\]/",'[[$2|$1]]',$x);
     if (!preg_match("/^([#*:]+) \\s* 

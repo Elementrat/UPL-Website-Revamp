@@ -1,5 +1,5 @@
 version=pmwiki-2.2.36 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
 author=moench
 charset=UTF-8
 csum=
@@ -8,10 +8,13 @@ name=SiteAdmin.AuthUser
 passwdattr=@admins
 passwdedit=@admins
 passwdread=@admins
-rev=18
+rev=19
 targets=
-text=(:Summary: Configuration of identity based authorisations:)(:nolinkwikiwords:)%0a!! What to do%0aThis is the configuration page for the UPL modified version of PmWiki's identity-based authorizations (aka "authuser.php").%0a%0aTo allow a user to edit the wiki using their UPL user name and password, edit this page and add his/her name to the comma separated list that begins @@pam: @@%0a%0a!! User accounts%0apam: capel, sohail, moench%0a%0a@admins: moench, sohail
-time=1331243416
+text=(:Summary: Configuration of identity based authorisations:)(:nolinkwikiwords:)%0a!! What to do%0aThis is the configuration page for the UPL modified version of PmWiki's identity-based authorizations (aka "authuser.php").%0a%0aTo allow a user to edit the wiki using their UPL user name and password, edit this page and add his/her name to the comma separated list that begins @@pam: @@%0a%0a!! User accounts%0apam: capel, sohail, moench, heindl%0a%0a@admins: moench, sohail, heindl
+time=1335909511
+author:1335909511=moench
+diff:1335909511:1331243416:=8,10c8,10%0a%3c pam: capel, sohail, moench, heindl%0a%3c %0a%3c @admins: moench, sohail, heindl%0a\ No newline at end of file%0a---%0a> pam: capel, sohail, moench%0a> %0a> @admins: moench, sohail%0a\ No newline at end of file%0a
+host:1335909511=127.0.0.1
 author:1331243416=moench
 diff:1331243416:1330567766:=10c10%0a%3c @admins: moench, sohail%0a\ No newline at end of file%0a---%0a> @admins: moench%0a\ No newline at end of file%0a
 host:1331243416=127.0.0.1
