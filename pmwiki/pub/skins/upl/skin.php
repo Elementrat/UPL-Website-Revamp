@@ -2,10 +2,20 @@
 
 loadTemplate($pagename);
 
+function shouldDisplayMain($page)
+{
+	if ($page == 'Main.HomePage' && $GLOBALS['action'] == 'browse')
+	{
+		return true;
+	}
+	return false;
+}
+
 function loadTemplate($page)
 {
 	global $SkinDir;
-	if ($page == 'Main.Test') // TODO For testing purposes
+	//die('<pre>'.print_r($GLOBALS, true).'</pre>');
+	if (shouldDisplayMain($page))
 	{
 		// No need to include this stuff for every page load; include it here
 		include_once('cookbook/mainpage.php');
@@ -27,7 +37,7 @@ function loadTemplate($page)
 
 function includeTitle($page, $titleSpaced)
 {
-	if ($page == 'Main.Test')
+	if (shouldDisplayMain($page))
 	{
 	}
 	else
@@ -71,7 +81,7 @@ EOT;
 function afterPageText($page, $titleSpaced)
 {
 	// TODO ?
-	/*if ($page == 'Main.Test')
+	/*if (shouldDisplayMain($page))
 	{
 	}
 	else

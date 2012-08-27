@@ -23,7 +23,7 @@ function coordHtml($coord)
     {
         $output .= @"%width=50px% {$coord[1]['photo']}"; // TODO This is a bit screwy
     }
-    $output .= @"{$coord[1]['name']} &lt;{$coord[0]}&gt;";
+    $output .= @"{$coord[1]['name']} &lt;{$coord[1]['email']}&gt;";
     $output .= @"</p>\n";
     return $output;
 }

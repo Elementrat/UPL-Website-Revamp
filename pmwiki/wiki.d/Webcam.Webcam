@@ -1,0 +1,18 @@
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+author=moench
+charset=UTF-8
+csum=
+ctime=1346102042
+host=127.0.0.1
+name=Webcam.Webcam
+rev=2
+targets=
+text=%25center%25http://beatq.upl.cs.wisc.edu:9192/multipart.jpg"UPL Webcam feed"
+time=1346102161
+author:1346102161=moench
+diff:1346102161:1346102042:=1c1%0a%3c %25center%25http://beatq.upl.cs.wisc.edu:9192/multipart.jpg"UPL Webcam feed"%0a\ No newline at end of file%0a---%0a> http://beatq.upl.cs.wisc.edu:9192/multipart.jpg"UPL Webcam feed"%0a\ No newline at end of file%0a
+host:1346102161=127.0.0.1
+author:1346102042=moench
+diff:1346102042:1346102042:=1d0%0a%3c http://beatq.upl.cs.wisc.edu:9192/multipart.jpg"UPL Webcam feed"%0a\ No newline at end of file%0a
+host:1346102042=127.0.0.1
