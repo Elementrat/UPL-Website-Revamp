@@ -47,7 +47,7 @@
 <div id="navtop">
 <div id="navtop-inner">
 
-<div id="headerlogo"></div>
+<a href="{$ScriptUrl}" id="headerlogo"></a>
 
 <ul id="menutop">
 	<li><a href="{$ScriptUrl}">Home</a></li>
@@ -65,12 +65,18 @@
 
 <!--/PageHeaderFmt-->
 
+
+<!--==== begin absolute mess ====-->
+
 <!--function:includeTitle {$Titlespaced}-->
 
 <!--PageText-->
 
 <!--function:afterPageText {$Titlespaced}-->
 $PageContents
+
+<!--==== end absolute mess ====-->
+
 
 <!--PageFooterFmt-->
 

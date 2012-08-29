@@ -18,13 +18,14 @@ function installCoordsMarkup()
 // TODO Obviously replace this with a much better representation
 function coordHtml($coord)
 {
-    $output = '<p>';
+    //$output = '<p>';
     if (isset($coord[1]['photo']))
     {
         $output .= @"%width=50px% {$coord[1]['photo']}"; // TODO This is a bit screwy
     }
-    $output .= @"{$coord[1]['name']} &lt;{$coord[1]['email']}&gt;";
-    $output .= @"</p>\n";
+    //$output .= @"{$coord[1]['name']} &lt;{$coord[1]['email']}&gt;";
+    $output .= @"||{$coord[1]['name']} ||<em>{$coord[0]}</em> ||&lt;{$coord[1]['email']}&gt; ||";
+    //$output .= @"</p>\n";
     return $output;
 }
 

@@ -1,0 +1,15 @@
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+author=moench
+charset=UTF-8
+csum=
+ctime=1346219854
+host=127.0.0.1
+name=KnowledgeBase.AddNewUsers
+rev=1
+targets=
+text=# have the user sign up sheet handy%0a# ensure that they have a CSL account (if not, send e-mail to lab)%0a# log onto bender and become root (sudo -s)%0a# navigate to ~upl/bin%0a# run adduser.py%0a# follow the prompts. be careful, the script doesn't handle bad input well%0a# log into the [[https://www-auth.cs.wisc.edu/forms/ | CSL authenticated web pages]] as user `upluse` and add the UPL bit there. (It will claim it failed, but it's not true)%0a# add the user to the upl-users mailing list%0a## [[https://lists.cs.wisc.edu/mailman/admin/upl-users]]%0a## Access the "admin interface". Login.%0a## Open up the "Membership Management".%0a## Click on the "Mass Subscription".%0a## Add users to the mailing list, one per line.%0a*** The options are "Subscribe", Send Welcome Message should be "Yes", Send Notifications of new subscriptions to the list owner should be "No".
+time=1346219854
+author:1346219854=moench
+diff:1346219854:1346219854:=1,14d0%0a%3c # have the user sign up sheet handy%0a%3c # ensure that they have a CSL account (if not, send e-mail to lab)%0a%3c # log onto bender and become root (sudo -s)%0a%3c # navigate to ~upl/bin%0a%3c # run adduser.py%0a%3c # follow the prompts. be careful, the script doesn't handle bad input well%0a%3c # log into the [[https://www-auth.cs.wisc.edu/forms/ | CSL authenticated web pages]] as user `upluse` and add the UPL bit there. (It will claim it failed, but it's not true)%0a%3c # add the user to the upl-users mailing list%0a%3c ## [[https://lists.cs.wisc.edu/mailman/admin/upl-users]]%0a%3c ## Access the "admin interface". Login.%0a%3c ## Open up the "Membership Management".%0a%3c ## Click on the "Mass Subscription".%0a%3c ## Add users to the mailing list, one per line.%0a%3c *** The options are "Subscribe", Send Welcome Message should be "Yes", Send Notifications of new subscriptions to the list owner should be "No".%0a\ No newline at end of file%0a
+host:1346219854=127.0.0.1

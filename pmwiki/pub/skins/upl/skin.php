@@ -1,5 +1,14 @@
 <?php if (!defined('PmWiki')) exit();
 
+/*
+ * Seriously, this is really fucking confusing. Templates are not very flexible
+ * in PmWiki, and I had to wrangle everything into submission. If you're the one
+ * tasked with maintaining this or you think you know a better way of doing it,
+ * feel free to contact me.
+ *  - Ben Moench
+ */
+
+
 loadTemplate($pagename);
 
 function shouldDisplayMain($page)
@@ -14,14 +23,13 @@ function shouldDisplayMain($page)
 function loadTemplate($page)
 {
 	global $SkinDir;
-	//die('<pre>'.print_r($GLOBALS, true).'</pre>');
 	if (shouldDisplayMain($page))
 	{
 		// No need to include this stuff for every page load; include it here
 		include_once('cookbook/mainpage.php');
 
 		// Load and generate the HTML code for upcoming UPL events
-		$GLOBALS['QuoteHtml'] = loadQuote();
+		$GLOBALS['QuoteHtml'] = ''; // loadQuote(); // Temporarily disable the quote
 		$GLOBALS['ProjectsHtml'] = generateProjectsHtml();
 		$GLOBALS['EventsHtml'] = generateEventsHtml();
 		
@@ -44,21 +52,21 @@ function includeTitle($page, $titleSpaced)
 	{
 		// Some boilerplate HTML that goes before a normal page
 		$before = <<<EOT
-<div id = "wrappertop">
-	<div class = "padding5">
-		<div class = "bigheading">
+<div id="wrappertop">
+	<div class="padding5">
+		<div class="bigheading">
 EOT;
 
 		$after = <<<EOT
 		</div>
-		<div class = "verticalspacer15"></div>
+		<div class="verticalspacer15"></div>
 	</div>
 </div>
-<div class = "verticalspacer30"></div>
+<div class="verticalspacer30"></div>
 
 </div>
 
-<div id = "content">
+<div id="content">
 EOT;
 
 		echo $before;
@@ -80,13 +88,10 @@ EOT;
 
 function afterPageText($page, $titleSpaced)
 {
-	// TODO ?
-	/*if (shouldDisplayMain($page))
+	if (!shouldDisplayMain($page))
 	{
+		echo '<br/>';
 	}
-	else
-	{
-	}*/
 }
 
 function generateProjectsHtml()

@@ -91,6 +91,7 @@ width:1024px;
 	margin: 0px auto;
 	width: 1024px;
 	min-height: 25em;
+	font-size: 16pt;
 }
 
 #quote{
@@ -261,5 +262,9 @@ height:150px;
 
 .headergrey{
 font-size:36px;
+}
+
+table td {
+	padding-right: 1em;
 }
 

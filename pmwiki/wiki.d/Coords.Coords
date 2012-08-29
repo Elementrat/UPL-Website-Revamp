@@ -6,10 +6,58 @@ csum=
 ctime=1331766855
 host=127.0.0.1
 name=Coords.Coords
-rev=37
+rev=53
 targets=
-text=Coordinators are the people who run the lab.%0a\\%0a\\%0a%0a@Coord moench%0a@name: Ben Moench%0a@email: bsmoench@wisc.edu%0a@end%0a%0a@Coord swarthou%0a@name: Kevin Swarthout%0a@end%0a%0a@Coord sohail%0a@name: Alex Sohail%0a@end%0a%0a@Coord norys%0a@name: Chris Norys%0a@end%0a%0a@Coord spafford%0a@name: Joseph Spafford%0a@end%0a%0a@Coord tolly%0a@name: Mike Tolly%0a@end%0a%0a@Coord heindl%0a@name: Nick Heindl%0a@end%0a%0a@Coord altekrus%0a@name: Jason Altekruse%0a@end%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a(:if false:)%0aTHIS IS OLD%0a%0aTODO Describe the format of the Coord markup.%0a%0aDays of the week:%0aM T W R F%0a%0aPossible hours:%0a8:30AM%0a9:55AM%0a11:00AM%0a12:05PM%0a1:20PM%0a2:25PM%0a3:30PM%0a4:35PM%0a%0aSo, for example MW-8:30AM 9:55AM, T-1:20PM%0a%0a(:ifend:)
-time=1346005042
+text=!!! Faculty Advisor%0a%0aProfessor Miller %3cbart@cs.wisc.edu>%0a\\%0a\\%0a%0a!!! Coordinators%0a%0aThese are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu | upl-coords@cs.wisc.edu]].%0a\\%0a\\%0a%0a|| border=0%0a%0a@Coord moench%0a@name: Ben Moench%0a@email: bsmoench@wisc.edu%0a@end%0a%0a@Coord swarthou%0a@name: Kevin Swarthout%0a@email: kswarthout@wisc.edu%0a@end%0a%0a@Coord sohail%0a@name: Alex Sohail%0a@email: asohail@wisc.edu%0a@end%0a%0a@Coord tolly%0a@name: Mike Tolly%0a@email: tolly@wisc.edu%0a@end%0a%0a@Coord heindl%0a@name: Nick Heindl%0a@email: nheindl@wisc.edu %0a@end%0a%0a@Coord norys%0a@name: Chris Norys%0a@email: norys@wisc.edu%0a@end%0a%0a@Coord spafford%0a@name: Joseph Spafford%0a@email: jspafford@wisc.edu%0a@end%0a%0a@Coord altekrus%0a@name: Jason Altekruse%0a@email: altekruse@wisc.edu%0a@end%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a(:if false:)%0aTHIS IS OLD%0a%0aTODO Describe the format of the Coord markup.%0a%0aDays of the week:%0aM T W R F%0a%0aPossible hours:%0a8:30AM%0a9:55AM%0a11:00AM%0a12:05PM%0a1:20PM%0a2:25PM%0a3:30PM%0a4:35PM%0a%0aSo, for example MW-8:30AM 9:55AM, T-1:20PM%0a%0a(:ifend:)
+time=1346221959
+author:1346221959=moench
+diff:1346221959:1346221946:=13c13%0a%3c || border=0%0a---%0a> || border=0 cellspacing="10"%0a
+host:1346221959=127.0.0.1
+author:1346221946=moench
+diff:1346221946:1346221658:=13c13%0a%3c || border=0 cellspacing="10"%0a---%0a> || cellpadding="5" border=0%0a
+host:1346221946=127.0.0.1
+author:1346221658=moench
+diff:1346221658:1346221632:=13c13%0a%3c || cellpadding="5" border=0%0a---%0a> || border=0 cellpadding=100em%0a
+host:1346221658=127.0.0.1
+author:1346221632=moench
+diff:1346221632:1346221619:=13c13%0a%3c || border=0 cellpadding=100em%0a---%0a> || border=0 cellpadding=10em%0a
+host:1346221632=127.0.0.1
+author:1346221619=moench
+diff:1346221619:1346221593:=13c13%0a%3c || border=0 cellpadding=10em%0a---%0a> || border=0 cellpadding=10%0a
+host:1346221619=127.0.0.1
+author:1346221593=moench
+diff:1346221593:1346221570:=13c13%0a%3c || border=0 cellpadding=10%0a---%0a> || border=0 cellpadding=5%0a
+host:1346221593=127.0.0.1
+author:1346221570=moench
+diff:1346221570:1346221413:=13c13%0a%3c || border=0 cellpadding=5%0a---%0a> || border=0%0a
+host:1346221570=127.0.0.1
+author:1346221413=moench
+diff:1346221413:1346221050:=12,13d11%0a%3c %0a%3c || border=0%0a
+host:1346221413=127.0.0.1
+author:1346221050=moench
+diff:1346221050:1346220755:=20d19%0a%3c @email: kswarthout@wisc.edu%0a25d23%0a%3c @email: asohail@wisc.edu%0a30d27%0a%3c @email: tolly@wisc.edu%0a35d31%0a%3c @email: nheindl@wisc.edu %0a40d35%0a%3c @email: norys@wisc.edu%0a45d39%0a%3c @email: jspafford@wisc.edu%0a50d43%0a%3c @email: altekruse@wisc.edu%0a
+host:1346221050=127.0.0.1
+author:1346220755=moench
+diff:1346220755:1346220628:=3c3%0a%3c Professor Miller %3cbart@cs.wisc.edu>%0a---%0a> Professor Miller (bart@cs.wisc.edu)%0a
+host:1346220755=127.0.0.1
+author:1346220628=moench
+diff:1346220628:1346220608:=3,5c3%0a%3c Professor Miller (bart@cs.wisc.edu)%0a%3c \\%0a%3c \\%0a---%0a> Professor Miller (bart@cs.wisc.edu) %0a
+host:1346220628=127.0.0.1
+author:1346220608=moench
+diff:1346220608:1346220578:=7c7%0a%3c These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu | upl-coords@cs.wisc.edu]].%0a---%0a> These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu]].%0a
+host:1346220608=127.0.0.1
+author:1346220578=moench
+diff:1346220578:1346220286:=3,7c3%0a%3c Professor Miller (bart@cs.wisc.edu) %0a%3c %0a%3c !!! Coordinators%0a%3c %0a%3c These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu]].%0a---%0a> Coordinators are the people who run the lab.%0a
+host:1346220578=127.0.0.1
+author:1346220286=moench
+diff:1346220286:1346220273:=1c1%0a%3c !!! Faculty Advisor%0a---%0a> !! Faculty Advisor%0a
+host:1346220286=127.0.0.1
+author:1346220273=moench
+diff:1346220273:1346215270:=1,2d0%0a%3c !! Faculty Advisor%0a%3c %0a
+host:1346220273=127.0.0.1
+author:1346215270=moench
+diff:1346215270:1346005042:=18,19c18,19%0a%3c @Coord tolly%0a%3c @name: Mike Tolly%0a---%0a> @Coord norys%0a> @name: Chris Norys%0a22,23c22,23%0a%3c @Coord heindl%0a%3c @name: Nick Heindl%0a---%0a> @Coord spafford%0a> @name: Joseph Spafford%0a26,27c26,27%0a%3c @Coord norys%0a%3c @name: Chris Norys%0a---%0a> @Coord tolly%0a> @name: Mike Tolly%0a30,31c30,31%0a%3c @Coord spafford%0a%3c @name: Joseph Spafford%0a---%0a> @Coord heindl%0a> @name: Nick Heindl%0a
+host:1346215270=127.0.0.1
 author:1346005042=moench
 diff:1346005042:1346004932:=26,27c26,27%0a%3c @Coord tolly%0a%3c @name: Mike Tolly%0a---%0a> @Coord altekrus%0a> @name: Jason Altekruse%0a29,37d28%0a%3c %0a%3c @Coord heindl%0a%3c @name: Nick Heindl%0a%3c @end%0a%3c %0a%3c @Coord altekrus%0a%3c @name: Jason Altekruse%0a%3c @end%0a%3c %0a
 host:1346005042=127.0.0.1

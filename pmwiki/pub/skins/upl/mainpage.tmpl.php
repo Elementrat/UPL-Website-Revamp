@@ -3,7 +3,7 @@
 	<div id="header"></div>
 
 	<div class="padding5">
-		<div id="quote"><?php global $QuoteHtml; echo $QuoteHtml; ?></div>
+		<!-- <div id="quote"><?php global $QuoteHtml; echo $QuoteHtml; ?></div> -->
 		<div class="bigheading">Current Projects</div>
 		<div class="verticalspacer15"></div>
 	</div>
