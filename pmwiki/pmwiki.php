@@ -54,7 +54,7 @@ $LocalDir = 'local';
 $InterMapFiles = array("$FarmD/scripts/intermap.txt",
   "$FarmD/local/farmmap.txt", '$SiteGroup.InterMap', 'local/localmap.txt');
 $Newline = "\263";                                 # deprecated, 2.0.0
-$KeepToken = "\235\235";  
+$KeepToken = "\034\034";
 $Now=time();
 define('READPAGE_CURRENT', $Now+604800);
 $TimeFmt = '%B %d, %Y, at %I:%M %p';
@@ -437,7 +437,7 @@ function ParseArgs($x, $optpat = '(?>(\\w+)[:=])') {
   return $z;
 }
 function PHSC($x, $flags=ENT_COMPAT, $enc=null) { # for PHP 5.4
-  if(is_null($enc)) $enc = $GLOBALS['Charset'];
+  if(is_null($enc)) $enc = "ISO-8859-1"; # $GLOBALS['Charset']
   return htmlspecialchars($x, $flags, $enc);
 }
 function StopWatch($x) { 

@@ -158,4 +158,3 @@ include_once("scripts/xlpage-utf-8.php");
 # $GUIButtons['table'] = array(600,
 #                       '||border=1 width=80%\\n||!Hdr ||!Hdr ||!Hdr ||\\n||     ||     ||     ||\\n||     ||     ||     ||\\n', '', '', 
 #                     '$GUIButtonDirUrlFmt/table.gif"$[Table]"');
-
