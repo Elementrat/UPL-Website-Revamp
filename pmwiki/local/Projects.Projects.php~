@@ -1,6 +1,0 @@
-<?php
-include_once("cookbook/projects.php");
-
-$EnableUpload = 1;
-installProjectsMarkup();
-

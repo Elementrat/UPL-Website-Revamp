@@ -46,8 +46,10 @@ $DefaultPasswords['admin'] = crypt('secretasdfghjk');
 include_once("scripts/xlpage-utf-8.php");
 
 
-include_once("cookbook/authuser.php");
+include_once("$FarmD/cookbook/authuser.php");
 $Author = $AuthId;
+
+include_once("$FarmD/cookbook/deobmail.php");
 
 ## Only logged-in people can edit
 $DefaultPasswords['edit'] = 'id:*';

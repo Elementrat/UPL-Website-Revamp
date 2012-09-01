@@ -1,15 +1,21 @@
 version=pmwiki-2.2.40 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
 author=moench
 charset=UTF-8
 csum=
 ctime=1346219518
 host=127.0.0.1
 name=KnowledgeBase.KnowledgeBase
-rev=2
-targets=KnowledgeBase.AddNewUsers
-text=This page exists to ease the pain that is running the UPL. Current coords will groan at the prospect of having to add to this, but future coords shall praise our names and tell epic stories about our exploits.%0a%0aPlease put articles about UPL setup and maintenance in the KnowledgeBase namespace.%0a%0a!!! UPL Trivia%0a* UPL History: http://www.alyska.net/uplhistory/ %0a%0a!!! UPL Maintenance%0a* Correct Order of Shutdown (in case of power outage, etc)%0a* How to set up a new computer%0a* Machines in the upl and their purpose%0a* How to see aggregate network traffic%0a* Fix to avoid /var/mail failing to mount on boot%0a* GDM visual fix - remove list of users%0a* Accessing the rather anomolous pgsql database (possibly on bender) %0a%0a!!! Users%0a* [[Add New Users | How to add a user to the UPL]]%0a* How to set someone up as a coord %0a%0a!!! Events%0a* How to set up an event %0a%0a!!! Webcam%0a* Software the Webcam uses%0a* Operation of the Webcam%0a* Add more filters to Webcam %0a%0a!!! Random Information%0a* How to burn disks on the UPL Computers%0a* How to set a user as an admin on the wiki %0a%0a!!! Coord Meetings%0a* Dec 6th, 2011
-time=1346219663
+rev=4
+targets=SiteAdmin.AuthUser,KnowledgeBase.AddNewUsers,KnowledgeBase.AddNewCoords
+text=This page exists to ease the pain that is running the UPL. Current coords will groan at the prospect of having to add to this, but future coords shall praise our names and tell epic stories about our exploits.%0a%0aPlease put articles about UPL setup and maintenance in the KnowledgeBase namespace.%0a%0a!!! Wiki%0a* [[SiteAdmin.Auth User | Adding new users to the wiki]]%0a%0a!!! UPL Trivia%0a* UPL History: http://www.alyska.net/uplhistory/ %0a%0a!!! UPL Maintenance%0a* Correct Order of Shutdown (in case of power outage, etc)%0a* How to set up a new computer%0a* Machines in the upl and their purpose%0a* How to see aggregate network traffic%0a* Fix to avoid /var/mail failing to mount on boot%0a* GDM visual fix - remove list of users%0a* Accessing the rather anomolous pgsql database (possibly on bender) %0a%0a!!! Users%0a* [[Add New Users | How to add a user to the UPL]]%0a* [[Add New Coords | How to set someone up as a coord]]%0a%0a!!! Events%0a* How to set up an event %0a%0a!!! Webcam%0a* Software the Webcam uses%0a* Operation of the Webcam%0a* Add more filters to Webcam %0a%0a!!! Random Information%0a* How to burn disks on the UPL Computers%0a* How to set a user as an admin on the wiki %0a%0a!!! Coord Meetings%0a* Dec 6th, 2011
+time=1346446863
+author:1346446863=moench
+diff:1346446863:1346381891:=4,6d3%0a%3c %0a%3c !!! Wiki%0a%3c * [[SiteAdmin.Auth User | Adding new users to the wiki]]%0a
+host:1346446863=127.0.0.1
+author:1346381891=moench
+diff:1346381891:1346219663:=19c19%0a%3c * [[Add New Coords | How to set someone up as a coord]]%0a---%0a> * How to set someone up as a coord %0a
+host:1346381891=127.0.0.1
 author:1346219663=moench
 diff:1346219663:1346219518:=18c18%0a%3c * [[Add New Users | How to add a user to the UPL]]%0a---%0a> * How to add a user to the UPL%0a
 host:1346219663=127.0.0.1

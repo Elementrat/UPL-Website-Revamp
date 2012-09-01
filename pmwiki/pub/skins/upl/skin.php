@@ -5,6 +5,9 @@
  * in PmWiki, and I had to wrangle everything into submission. If you're the one
  * tasked with maintaining this or you think you know a better way of doing it,
  * feel free to contact me.
+ *
+ * Note that there are many places where the URL of the wiki is assumed to be /
+ *
  *  - Ben Moench
  */
 
@@ -30,8 +33,8 @@ function loadTemplate($page)
 
 		// Load and generate the HTML code for upcoming UPL events
 		$GLOBALS['QuoteHtml'] = ''; // loadQuote(); // Temporarily disable the quote
-		$GLOBALS['ProjectsHtml'] = generateProjectsHtml();
-		$GLOBALS['EventsHtml'] = generateEventsHtml();
+		$GLOBALS['ProjectsHtml'] = generateProjectsHtml(loadProjects());
+		$GLOBALS['EventsHtml'] = generateEventsHtml(loadEvents());
 		
 		$GLOBALS['PageContents'] = getIncludeContents("$SkinDir/mainpage.tmpl.php");
 	}
@@ -79,7 +82,7 @@ EOT;
 		}
 		else
 		{
-			echo "${names[0]} . $titleSpaced";
+			echo "<a href=\"/${names[0]}\">${names[0]}</a> . $titleSpaced";
 		}
 		
 		echo $after;
@@ -94,10 +97,8 @@ function afterPageText($page, $titleSpaced)
 	}
 }
 
-function generateProjectsHtml()
+function generateProjectsHtml($projects)
 {
-    $projects = loadProjects();
-    
     $total = 8;
     if (count($projects) < $total)
     {
@@ -116,22 +117,20 @@ function generateProjectsHtml()
     function formatProject($project)
     {
         return
-            '<div class = "box"><div class = "boxlabel">' .
+            '<div class = "box"><a href="' . @$project[1]['url'] . '" target="_blank" class="boxlabel">' .
             $project[0] . '<br/>' . 
-            @$project[1]['short'] . '</div></div>';
+            '<span class="projectshorttext">' . @$project[1]['short'] . '</span></a></div>';
     }
     
     return implode("\n", array_map(formatProject, $projects));
 }
 
-function generateEventsHtml()
+function generateEventsHtml($events)
 {
-    $events = loadEvents();
-    
     if (count($events) < 1)
     {
         // TODO This should be improved
-        return '<div class = "mediumheading"></div><article><em>No upcoming events.</em></article>';
+        return '<div class="mediumheading"></div><article><em>No upcoming events.</em></article>';
     }
     
     // Map an event into its HTML
@@ -140,12 +139,12 @@ function generateEventsHtml()
         if (strlen($event['description']) < 1)
         {
             // HACK There's probably a better way of doing this
-            $event['description'] = '<div class = "mediumheading"></div><article><em>No description.</em></article>';
+            $event['description'] = '<em>No description.</em>';
         }
         
         return
             '<div class = "mediumheading">' . $event['summary'] .
-            ": " . formatDate($event['start'], $event['end']) .
+            ": " . formatEventDate($event['start'], $event['end']) .
             "</div>\n" .
             "<article>\n" .
             $event['description'] .
@@ -153,11 +152,6 @@ function generateEventsHtml()
     }
     
     return implode("\n", array_map(formatEvent, $events));
-}
-
-function formatDate($start, $end)
-{
-    return $start->format("l, F j") . " at " . $start->format("g:i A");
 }
 
 function getIncludeContents($filename)

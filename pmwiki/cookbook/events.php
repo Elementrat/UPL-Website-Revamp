@@ -3,6 +3,7 @@ include_once('cookbook/secret.php');
 include_once('cookbook/google-api-php-client/src/apiClient.php');
 include_once('cookbook/google-api-php-client/src/contrib/apiCalendarService.php');
 
+
 /**
  * Load the list of upcoming events in the UPL and return an array containing
  * an array of each event's information.
@@ -62,5 +63,49 @@ function loadEvents()
 
     // Retrieve all our events
     return array_map(mapEvent, $events);
+}
+
+/**
+ * Install a declaration that will let us insert a list of upcoming events into
+ * the page.
+ */
+function installEventsMarkup()
+{
+    Markup('events', 'directives', '/\\(:events:\\)/e', "eventsMarkupCall()");
+}
+
+function eventsMarkupCall()
+{
+    $events = loadEvents();
+    
+    if (count($events) < 1)
+    {
+        return '<em>No upcoming events.</em>';
+    }
+    
+    // Map an event into its HTML
+    function formatEvent($event)
+    {
+        if (strlen($event['description']) < 1)
+        {
+            // HACK There's probably a better way of doing this
+            $event['description'] = '<em>No description.</em>';
+        }
+        
+        return
+            '<h3>' . $event['summary'] .
+            ": " . formatEventDate($event['start'], $event['end']) .
+            "</h3>\n" .
+            "<article>\n" .
+            $event['description'] .
+            "</article>\n";
+    }
+    
+    return implode("\n", array_map(formatEvent, $events));
+}
+
+function formatEventDate($start, $end)
+{
+    return $start->format("l, F j") . " at " . $start->format("g:i A");
 }
 

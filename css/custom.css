@@ -128,15 +128,19 @@ background: linear-gradient(top,  #7db9e8 0%,#2785c4 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#2785c4',GradientType=0 ); /* IE6-8 */
 }
 
-#projectshowcase-inner{
-width:1024px;
-margin:0px auto;
-padding-left:150px;
+#projectshowcase-inner {
+	width: 1024px;
+	margin: 0px auto;
+	padding-left: 150px;
 }
 
-#col-left{
-float:left;
-width:500px;	
+.projectshorttext {
+	font-size: 12pt;
+}
+
+#col-left {
+	float: left;
+	width: 500px;	
 }
 
 
@@ -174,47 +178,80 @@ width:500px;
 	float: right;
 }
 
-.box{
-width:200px;
-height:125px;
-float:left;
-border:#FFF;
-margin-left:10px;
-margin-top:15px;
-border:1px solid #FEFEFE;
-background:url(../img/logobox.jpg);
-background-position:center;
+.box {
+	display: block;
+	width: 200px;
+	height: 125px;
+	float: left;
+	border: #FFF;
+	margin-left: 10px;
+	margin-top: 15px;
+	border: 1px solid #FEFEFE;
+	background: url(../img/logobox.jpg);
+	background-position: center;
 }
 
-.box:hover .boxlabel{
-background:rgba(4,55,117,255);
-cursor:pointer;
-margin-top:50px;
-height:60px;
-padding-top:15px;
-line-height:25px;
+.box:hover .boxlabel {
+	display: block;
+	background: rgba(4,55,117,255);
+	cursor: pointer;
+	margin-top: 50px;
+	height: 60px;
+	padding-top: 15px;
+	line-height: 25px;
 }
 
-.boxlabel{
-background:#043775;
-background:rgba(4,55,117,255);
-color:#FFF;
-height:50px;
-margin-top:75px;
-text-align:center;
-line-height:50px;
-overflow:hidden;	
+.boxlabel {
+	display: block;
+	background: #043775;
+	background: rgba(4,55,117,255);
+	color: #FFF;
+	height: 50px;
+	margin-top: 75px;
+	text-align: center;
+	line-height: 50px;
+	overflow: hidden;
+
+	/* CSS3 stuff for the ellipsis effect */
+	white-space: nowrap;
+	text-overflow: ellipsis;	
 }
 
-.bigheading{
-margin-top:25px;
-width:100%;
-text-align:center;
-font-size:46px;
-color:#09F;
-border-top:1px solid #CCC;
-border-bottom:1px solid #CCC;
-padding:10px 10px;
+/* Stuff to make it not look like a link */
+.boxlabel:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.boxlabel:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.boxlabel:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.boxlabel:active {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.bigheading {
+	margin-top: 25px;
+	width: 100%;
+	text-align: center;
+	font-size: 46px;
+	color: #09F;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 10px 10px;
+}
+
+.bigheading a {
+	color:#09F;
+	text-decoration: none;
 }
 
 .mediumheading{
@@ -265,6 +302,12 @@ font-size:36px;
 }
 
 table td {
-	padding-right: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+table th {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 

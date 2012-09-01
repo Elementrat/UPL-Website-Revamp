@@ -1,0 +1,24 @@
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
+author=moench
+charset=UTF-8
+csum=
+ctime=1346448080
+host=127.0.0.1
+name=Events.Events
+rev=4
+targets=Location.Location
+text=(:events:)%0a%0a%0a''Unless otherwise noted, events are usually held in [[Location/ | 1341 CS]].''
+time=1346527946
+author:1346527946=moench
+diff:1346527946:1346527930:=2d1%0a%3c %0a
+host:1346527946=127.0.0.1
+author:1346527930=moench
+diff:1346527930:1346527889:=1,3c1,3%0a%3c (:events:)%0a%3c %0a%3c ''Unless otherwise noted, events are usually held in [[Location/ | 1341 CS]].''%0a\ No newline at end of file%0a---%0a> Unless otherwise noted, events are usually held in [[Location/ | 1341 CS]].%0a> %0a> (:events:)%0a\ No newline at end of file%0a
+host:1346527930=127.0.0.1
+author:1346527889=moench
+diff:1346527889:1346448080:=1,2d0%0a%3c Unless otherwise noted, events are usually held in [[Location/ | 1341 CS]].%0a%3c %0a
+host:1346527889=127.0.0.1
+author:1346448080=moench
+diff:1346448080:1346448080:=1d0%0a%3c (:events:)%0a\ No newline at end of file%0a
+host:1346448080=127.0.0.1

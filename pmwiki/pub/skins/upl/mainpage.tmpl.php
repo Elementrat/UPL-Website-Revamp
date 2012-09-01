@@ -25,7 +25,7 @@
 
 	<div id="col-left">
 		<div class="headergrey">What is the UPL?</div>
-		We're a resource for undergraduate students in UW Madison's Computer Science department. Find out <a>why you should join</a> us!
+		We're a resource for undergraduate students in UW Madison's Computer Science department. Find out <a href="/About">why you should join</a> us!
 	</div>
 	
 	<div class="horizontalspacer15"></div>

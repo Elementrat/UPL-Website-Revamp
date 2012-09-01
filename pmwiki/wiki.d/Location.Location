@@ -1,15 +1,18 @@
 version=pmwiki-2.2.40 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
 author=moench
 charset=UTF-8
 csum=
 ctime=1346004351
 host=127.0.0.1
 name=Location.Location
-rev=2
+rev=3
 targets=
-text=We are located in the triangle shaped room with a large glass window on the ground floor of the Computer Sciences building. Our full address is:%0a%0a1341 Computer Science \\%0a1210 W. Dayton Street
-time=1346004407
+text=We are located on the ground floor of the Computer Sciences building, in the triangle shaped room with a large glass window. Our full address is:%0a%0a1341 Computer Science \\%0a1210 W. Dayton Street
+time=1346382069
+author:1346382069=moench
+diff:1346382069:1346004407:=1c1%0a%3c We are located on the ground floor of the Computer Sciences building, in the triangle shaped room with a large glass window. Our full address is:%0a---%0a> We are located in the triangle shaped room with a large glass window on the ground floor of the Computer Sciences building. Our full address is:%0a
+host:1346382069=127.0.0.1
 author:1346004407=moench
 diff:1346004407:1346004351:=3c3%0a%3c 1341 Computer Science \\%0a---%0a> 1341 Computer Science%0a
 host:1346004407=127.0.0.1

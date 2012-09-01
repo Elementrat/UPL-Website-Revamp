@@ -1,0 +1,81 @@
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
+author=moench
+charset=UTF-8
+csum=
+ctime=1346528792
+host=127.0.0.1
+name=Coords.Hours
+rev=23
+targets=
+text=The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours.%0a%0a!!! Office Hours: Spring 2012%0a%0a%0a||border=1%0a||! Time    ||! Monday  ||! Tuesday ||! Wednesday ||! Thursday ||! Friday  ||%0a||! 8:30AM  ||          ||          || spafford   ||           || spafford ||%0a||! 9:55AM  ||          ||          ||            ||           ||          ||%0a||! 11:00AM ||          ||          ||            ||           ||          ||%0a||! 12:05PM ||          || capel    ||            || capel     ||          ||%0a||! 1:20PM  ||          ||          ||            ||           ||          ||%0a||! 2:25PM  || heindl   || swarthou || moench     || swarthou  || tolly    ||%0a||! 3:30PM  || heindl   || swarthou || moench     ||           || tolly    ||%0a||! 4:35PM  || sohail   ||          || norys      ||           || norys    ||
+time=1346530020
+author:1346530020=moench
+diff:1346530020:1346529945:=1,2d0%0a%3c The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours.%0a%3c %0a
+host:1346530020=127.0.0.1
+author:1346529945=moench
+diff:1346529945:1346529919:=
+host:1346529945=127.0.0.1
+author:1346529919=moench
+diff:1346529919:1346529776:=6c6%0a%3c ||! 8:30AM  ||          ||          || spafford   ||           || spafford ||%0a---%0a> ||! 8:30AM  ||          ||          ||            ||           ||          ||%0a9c9%0a%3c ||! 12:05PM ||          || capel    ||            || capel     ||          ||%0a---%0a> ||! 12:05PM ||          ||          ||            ||           ||          ||%0a11,13c11,13%0a%3c ||! 2:25PM  || heindl   || swarthou || moench     || swarthou  || tolly    ||%0a%3c ||! 3:30PM  || heindl   || swarthou || moench     ||           || tolly    ||%0a%3c ||! 4:35PM  || sohail   ||          || norys      ||           || norys    ||%0a\ No newline at end of file%0a---%0a> ||! 2:25PM  ||          ||          ||            ||           ||          ||%0a> ||! 3:30PM  ||          ||          ||            ||           ||          ||%0a> ||! 4:35PM  ||          ||          ||            ||           ||          ||%0a\ No newline at end of file%0a
+host:1346529919=127.0.0.1
+author:1346529776=moench
+diff:1346529776:1346529764:=1c1%0a%3c !!! Office Hours: Spring 2012%0a---%0a> !!! Office Hours Spring 2012%0a
+host:1346529776=127.0.0.1
+author:1346529764=moench
+diff:1346529764:1346529726:=1c1%0a%3c !!! Office Hours Spring 2012%0a---%0a> !!! Office Hours%0a
+host:1346529764=127.0.0.1
+author:1346529726=moench
+diff:1346529726:1346529716:=2,3c2%0a%3c %0a%3c %0a---%0a> \\%0a
+host:1346529726=127.0.0.1
+author:1346529716=moench
+diff:1346529716:1346529710:=2c2%0a%3c \\%0a---%0a> %0a
+host:1346529716=127.0.0.1
+author:1346529710=moench
+diff:1346529710:1346529702:=2d1%0a%3c %0a
+host:1346529710=127.0.0.1
+author:1346529702=moench
+diff:1346529702:1346529689:=1c1%0a%3c !!! Office Hours%0a---%0a> !! Office Hours%0a
+host:1346529702=127.0.0.1
+author:1346529689=moench
+diff:1346529689:1346529634:=1,2c1%0a%3c !! Office Hours%0a%3c ||border=1%0a---%0a> ||border=1 align=center%0a
+host:1346529689=127.0.0.1
+author:1346529634=moench
+diff:1346529634:1346529625:=
+host:1346529634=127.0.0.1
+author:1346529625=moench
+diff:1346529625:1346529564:=1c1,2%0a%3c ||border=1 align=center%0a---%0a> %25center%25%0a> ||border=1%0a
+host:1346529625=127.0.0.1
+author:1346529564=moench
+diff:1346529564:1346529552:=1,2c1%0a%3c %25center%25%0a%3c ||border=1%0a---%0a> %25center%25||border=1%0a
+host:1346529564=127.0.0.1
+author:1346529552=moench
+diff:1346529552:1346529535:=1c1%0a%3c %25center%25||border=1%0a---%0a> ||border=1%0a
+host:1346529552=127.0.0.1
+author:1346529535=moench
+diff:1346529535:1346529398:=2,10c2,10%0a%3c ||! Time    ||! Monday  ||! Tuesday ||! Wednesday ||! Thursday ||! Friday  ||%0a%3c ||! 8:30AM  ||          ||          ||            ||           ||          ||%0a%3c ||! 9:55AM  ||          ||          ||            ||           ||          ||%0a%3c ||! 11:00AM ||          ||          ||            ||           ||          ||%0a%3c ||! 12:05PM ||          ||          ||            ||           ||          ||%0a%3c ||! 1:20PM  ||          ||          ||            ||           ||          ||%0a%3c ||! 2:25PM  ||          ||          ||            ||           ||          ||%0a%3c ||! 3:30PM  ||          ||          ||            ||           ||          ||%0a%3c ||! 4:35PM  ||          ||          ||            ||           ||          ||%0a\ No newline at end of file%0a---%0a> ||! Time    ||!Monday  ||!Tuesday ||!Wednesday ||!Thursday ||!Friday  ||%0a> ||! 8:30AM  ||         ||         ||           ||          ||         ||%0a> ||! 9:55AM  ||         ||         ||           ||          ||         ||%0a> ||! 11:00AM ||         ||         ||           ||          ||         ||%0a> ||! 12:05PM ||         ||         ||           ||          ||         ||%0a> ||! 1:20PM  ||         ||         ||           ||          ||         ||%0a> ||! 2:25PM  ||         ||         ||           ||          ||         ||%0a> ||! 3:30PM  ||         ||         ||           ||          ||         ||%0a> ||! 4:35PM  ||         ||         ||           ||          ||         ||%0a\ No newline at end of file%0a
+host:1346529535=127.0.0.1
+author:1346529398=moench
+diff:1346529398:1346529364:=1c1%0a%3c ||border=1%0a---%0a> ||border=0%0a
+host:1346529398=127.0.0.1
+author:1346529364=moench
+diff:1346529364:1346529341:=2,10c2,10%0a%3c ||! Time    ||!Monday  ||!Tuesday ||!Wednesday ||!Thursday ||!Friday  ||%0a%3c ||! 8:30AM  ||         ||         ||           ||          ||         ||%0a%3c ||! 9:55AM  ||         ||         ||           ||          ||         ||%0a%3c ||! 11:00AM ||         ||         ||           ||          ||         ||%0a%3c ||! 12:05PM ||         ||         ||           ||          ||         ||%0a%3c ||! 1:20PM  ||         ||         ||           ||          ||         ||%0a%3c ||! 2:25PM  ||         ||         ||           ||          ||         ||%0a%3c ||! 3:30PM  ||         ||         ||           ||          ||         ||%0a%3c ||! 4:35PM  ||         ||         ||           ||          ||         ||%0a\ No newline at end of file%0a---%0a> ||!Time    ||!Monday  ||!Tuesday ||!Wednesday ||!Thursday ||!Friday  ||%0a> ||!8:30AM  ||         ||         ||           ||          ||         ||%0a> ||!9:55AM  ||         ||         ||           ||          ||         ||%0a> ||!11:00AM ||         ||         ||           ||          ||         ||%0a> ||!12:05PM ||         ||         ||           ||          ||         ||%0a> ||!1:20PM  ||         ||         ||           ||          ||         ||%0a> ||!2:25PM  ||         ||         ||           ||          ||         ||%0a> ||!3:30PM  ||         ||         ||           ||          ||         ||%0a> ||!4:35PM  ||         ||         ||           ||          ||         ||%0a\ No newline at end of file%0a
+host:1346529364=127.0.0.1
+author:1346529341=moench
+diff:1346529341:1346529033:=2,10c2,3%0a%3c ||!Time    ||!Monday  ||!Tuesday ||!Wednesday ||!Thursday ||!Friday  ||%0a%3c ||!8:30AM  ||         ||         ||           ||          ||         ||%0a%3c ||!9:55AM  ||         ||         ||           ||          ||         ||%0a%3c ||!11:00AM ||         ||         ||           ||          ||         ||%0a%3c ||!12:05PM ||         ||         ||           ||          ||         ||%0a%3c ||!1:20PM  ||         ||         ||           ||          ||         ||%0a%3c ||!2:25PM  ||         ||         ||           ||          ||         ||%0a%3c ||!3:30PM  ||         ||         ||           ||          ||         ||%0a%3c ||!4:35PM  ||         ||         ||           ||          ||         ||%0a\ No newline at end of file%0a---%0a> ||        ||!Monday ||!Tuesday ||!Wednesday ||!Thursday ||!Friday ||%0a> ||1       ||2       ||3        ||4          ||5          ||6       ||%0a\ No newline at end of file%0a
+host:1346529341=127.0.0.1
+author:1346529033=moench
+diff:1346529033:1346529007:=2c2%0a%3c ||        ||!Monday ||!Tuesday ||!Wednesday ||!Thursday ||!Friday ||%0a---%0a> ||        ||Monday ||Tuesday ||Wednesday ||Thursday ||Friday ||%0a
+host:1346529033=127.0.0.1
+author:1346529007=moench
+diff:1346529007:1346528944:=2c2%0a%3c ||        ||Monday ||Tuesday ||Wednesday ||Thursday ||Friday ||%0a---%0a> ||        ||!Monday ||!Tuesday ||!Wednesday ||! Thursday ||!Friday ||%0a
+host:1346529007=127.0.0.1
+author:1346528944=moench
+diff:1346528944:1346528852:=2,3c2%0a%3c ||        ||!Monday ||!Tuesday ||!Wednesday ||! Thursday ||!Friday ||%0a%3c ||1       ||2       ||3        ||4          ||5          ||6       ||%0a\ No newline at end of file%0a---%0a> ||        ||!Monday ||!Tuesday ||!Wednesday ||! Thursday ||!Friday ||%0a\ No newline at end of file%0a
+host:1346528944=127.0.0.1
+author:1346528852=moench
+diff:1346528852:1346528792:=1,2c1%0a%3c ||border=0%0a%3c ||        ||!Monday ||!Tuesday ||!Wednesday ||! Thursday ||!Friday ||%0a\ No newline at end of file%0a---%0a> ||border=0%0a\ No newline at end of file%0a
+host:1346528852=127.0.0.1
+author:1346528792=moench
+diff:1346528792:1346528792:=1d0%0a%3c ||border=0%0a\ No newline at end of file%0a
+host:1346528792=127.0.0.1

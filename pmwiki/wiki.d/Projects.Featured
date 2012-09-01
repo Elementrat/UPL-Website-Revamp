@@ -1,15 +1,30 @@
-version=pmwiki-2.2.36 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
-author=sohail
+version=pmwiki-2.2.40 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
+author=moench
 charset=UTF-8
 csum=
 ctime=1331244846
-host=128.105.45.70
+host=127.0.0.1
 name=Projects.Featured
-rev=6
+rev=11
 targets=
-text=@Project This Website%0a@short: The short text.%0a@end%0a%0a@Project P2%0a@short: The short text.%0a@end%0a%0a@Project P3%0a@short: The short text.%0a@end%0a%0a@Project P4%0a@short: The short text.%0a@end%0a%0a@Project P5%0a@short: The short text.%0a@end%0a%0a@Project P6%0a@short: The short text.%0a@end%0a%0a@Project P7%0a@short: The short text.%0a@end%0a%0a@Project P8%0a@short: The short text.%0a@end
-time=1337032054
+text=@Project This Website%0a@short: The short text. What happens when this text is a little bit longer?%0a@end%0a%0a@Project BrazOS%0a@short: A simple ARM OS%0a@url: http://code.google.com/p/brazos/%0a@updated: 2012%0a@end%0a%0a@Project Lengua%0a@short: A type-inferring, strongly typed scheme dialect%0a@url: https://github.com/capel/lengua%0a@updated: 2012%0a@end%0a%0a@Project camplay%0a@short: A GPL webcam game engine, and a complete game that uses it%0a@url: https://bitbucket.org/michaelb/camplay%0a@updated: 2011%0a@end%0a%0a@Project Leebre.org%0a@short: An e-publishing system and community for CC authors%0a@url: http://leebre.org/%0a@end%0a%0a@Project Soundstroke%0a@end%0a%0a@Project EALayer3%0a@short: A decoder/encoder for an audio format commonly used in EA games%0a@url: https://bitbucket.org/Zenchreal/ealayer3%0a@update: 2011%0a@end%0a%0a@Project Kakofony%0a@short: A top down shooter / music game%0a@url: https://bitbucket.org/michaelb/kakofony%0a@update: 2010%0a@end%0a
+time=1346531577
+author:1346531577=moench
+diff:1346531577:1346531565:=24c24%0a%3c @short: An e-publishing system and community for CC authors%0a---%0a> @short: A e-publishing system and community for CC authors%0a
+host:1346531577=127.0.0.1
+author:1346531565=moench
+diff:1346531565:1346531391:=24d23%0a%3c @short: A e-publishing system and community for CC authors%0a
+host:1346531565=127.0.0.1
+author:1346531391=moench
+diff:1346531391:1346531366:=24a25,27%0a> @end%0a> %0a> @Project MineLords%0a
+host:1346531391=127.0.0.1
+author:1346531366=moench
+diff:1346531366:1346530888:=5,8c5,6%0a%3c @Project BrazOS%0a%3c @short: A simple ARM OS%0a%3c @url: http://code.google.com/p/brazos/%0a%3c @updated: 2012%0a---%0a> @Project P2%0a> @short: The short text.%0a11,14c9,10%0a%3c @Project Lengua%0a%3c @short: A type-inferring, strongly typed scheme dialect%0a%3c @url: https://github.com/capel/lengua%0a%3c @updated: 2012%0a---%0a> @Project P3%0a> @short: The short text.%0a17,20c13,14%0a%3c @Project camplay%0a%3c @short: A GPL webcam game engine, and a complete game that uses it%0a%3c @url: https://bitbucket.org/michaelb/camplay%0a%3c @updated: 2011%0a---%0a> @Project P4%0a> @short: The short text.%0a23,24c17,18%0a%3c @Project Leebre.org%0a%3c @url: http://leebre.org/%0a---%0a> @Project P5%0a> @short: The short text.%0a27c21,22%0a%3c @Project MineLords%0a---%0a> @Project P6%0a> @short: The short text.%0a30c25,26%0a%3c @Project Soundstroke%0a---%0a> @Project P7%0a> @short: The short text.%0a33,43c29,31%0a%3c @Project EALayer3%0a%3c @short: A decoder/encoder for an audio format commonly used in EA games%0a%3c @url: https://bitbucket.org/Zenchreal/ealayer3%0a%3c @update: 2011%0a%3c @end%0a%3c %0a%3c @Project Kakofony%0a%3c @short: A top down shooter / music game%0a%3c @url: https://bitbucket.org/michaelb/kakofony%0a%3c @update: 2010%0a%3c @end%0a---%0a> @Project P8%0a> @short: The short text.%0a> @end%0a\ No newline at end of file%0a
+host:1346531366=127.0.0.1
+author:1346530888=moench
+diff:1346530888:1337032054:=2c2%0a%3c @short: The short text. What happens when this text is a little bit longer?%0a---%0a> @short: The short text.%0a
+host:1346530888=127.0.0.1
 author:1337032054=sohail
 diff:1337032054:1337032053:=
 host:1337032054=128.105.45.70

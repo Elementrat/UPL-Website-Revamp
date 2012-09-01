@@ -1,15 +1,24 @@
 version=pmwiki-2.2.40 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
 author=moench
 charset=UTF-8
 csum=
 ctime=1331766855
 host=127.0.0.1
 name=Coords.Coords
-rev=53
+rev=56
 targets=
-text=!!! Faculty Advisor%0a%0aProfessor Miller %3cbart@cs.wisc.edu>%0a\\%0a\\%0a%0a!!! Coordinators%0a%0aThese are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu | upl-coords@cs.wisc.edu]].%0a\\%0a\\%0a%0a|| border=0%0a%0a@Coord moench%0a@name: Ben Moench%0a@email: bsmoench@wisc.edu%0a@end%0a%0a@Coord swarthou%0a@name: Kevin Swarthout%0a@email: kswarthout@wisc.edu%0a@end%0a%0a@Coord sohail%0a@name: Alex Sohail%0a@email: asohail@wisc.edu%0a@end%0a%0a@Coord tolly%0a@name: Mike Tolly%0a@email: tolly@wisc.edu%0a@end%0a%0a@Coord heindl%0a@name: Nick Heindl%0a@email: nheindl@wisc.edu %0a@end%0a%0a@Coord norys%0a@name: Chris Norys%0a@email: norys@wisc.edu%0a@end%0a%0a@Coord spafford%0a@name: Joseph Spafford%0a@email: jspafford@wisc.edu%0a@end%0a%0a@Coord altekrus%0a@name: Jason Altekruse%0a@email: altekruse@wisc.edu%0a@end%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a(:if false:)%0aTHIS IS OLD%0a%0aTODO Describe the format of the Coord markup.%0a%0aDays of the week:%0aM T W R F%0a%0aPossible hours:%0a8:30AM%0a9:55AM%0a11:00AM%0a12:05PM%0a1:20PM%0a2:25PM%0a3:30PM%0a4:35PM%0a%0aSo, for example MW-8:30AM 9:55AM, T-1:20PM%0a%0a(:ifend:)
-time=1346221959
+text=!!! Faculty Advisor%0a%0aProfessor Miller %3c[[mailto:bart@cs.wisc.edu]]>%0a\\%0a\\%0a%0a!!! Coordinators%0a%0aThese are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu]].%0a\\%0a\\%0a%0a||border=0%0a%0a@Coord moench%0a@name: Ben Moench%0a@email: [[mailto:bsmoench@wisc.edu]]%0a@end%0a%0a@Coord swarthou%0a@name: Kevin Swarthout%0a@email: [[mailto:kswarthout@wisc.edu]]%0a@end%0a%0a@Coord sohail%0a@name: Alex Sohail%0a@email: [[mailto:asohail@wisc.edu]]%0a@end%0a%0a@Coord tolly%0a@name: Mike Tolly%0a@email: [[mailto:tolly@wisc.edu]]%0a@end%0a%0a@Coord heindl%0a@name: Nick Heindl%0a@email: [[mailto:nheindl@wisc.edu]]%0a@end%0a%0a@Coord norys%0a@name: Chris Norys%0a@email: [[mailto:norys@wisc.edu]]%0a@end%0a%0a@Coord spafford%0a@name: Joseph Spafford%0a@email: [[mailto:jspafford@wisc.edu]]%0a@end%0a%0a@Coord altekrus%0a@name: Jason Altekruse%0a@email: [[mailto:altekruse@wisc.edu]]%0a@end%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a%0a(:if false:)%0aTHIS IS OLD%0a%0aTODO Describe the format of the Coord markup.%0a%0aDays of the week:%0aM T W R F%0a%0aPossible hours:%0a8:30AM%0a9:55AM%0a11:00AM%0a12:05PM%0a1:20PM%0a2:25PM%0a3:30PM%0a4:35PM%0a%0aSo, for example MW-8:30AM 9:55AM, T-1:20PM%0a%0a(:ifend:)
+time=1346528894
+author:1346528894=moench
+diff:1346528894:1346528656:=13c13%0a%3c ||border=0%0a---%0a> || border=0%0a
+host:1346528894=127.0.0.1
+author:1346528656=moench
+diff:1346528656:1346528565:=3c3%0a%3c Professor Miller %3c[[mailto:bart@cs.wisc.edu]]>%0a---%0a> Professor Miller %3cbart@cs.wisc.edu>%0a17c17%0a%3c @email: [[mailto:bsmoench@wisc.edu]]%0a---%0a> @email: bsmoench@wisc.edu%0a22c22%0a%3c @email: [[mailto:kswarthout@wisc.edu]]%0a---%0a> @email: kswarthout@wisc.edu%0a27c27%0a%3c @email: [[mailto:asohail@wisc.edu]]%0a---%0a> @email: asohail@wisc.edu%0a32c32%0a%3c @email: [[mailto:tolly@wisc.edu]]%0a---%0a> @email: tolly@wisc.edu%0a37c37%0a%3c @email: [[mailto:nheindl@wisc.edu]]%0a---%0a> @email: nheindl@wisc.edu %0a42c42%0a%3c @email: [[mailto:norys@wisc.edu]]%0a---%0a> @email: norys@wisc.edu%0a47c47%0a%3c @email: [[mailto:jspafford@wisc.edu]]%0a---%0a> @email: jspafford@wisc.edu%0a52c52%0a%3c @email: [[mailto:altekruse@wisc.edu]]%0a---%0a> @email: altekruse@wisc.edu%0a
+host:1346528656=127.0.0.1
+author:1346528565=moench
+diff:1346528565:1346221959:=9c9%0a%3c These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu]].%0a---%0a> These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at [[mailto:upl-coords@cs.wisc.edu | upl-coords@cs.wisc.edu]].%0a
+host:1346528565=127.0.0.1
 author:1346221959=moench
 diff:1346221959:1346221946:=13c13%0a%3c || border=0%0a---%0a> || border=0 cellspacing="10"%0a
 host:1346221959=127.0.0.1

@@ -1,9 +1,9 @@
 version=pmwiki-2.2.40 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:14.0) Gecko/20100101 Firefox/14.0.1
+agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0
 charset=UTF-8
 ctime=1331766855
 host=127.0.0.1
 name=Coords.RecentChanges
-rev=53
-text=* [[Coords/Coords]]  . . . August 29, 2012, at 01:32 AM by [[~moench]]: [==]%0a
-time=1346221959
+rev=79
+text=* [[Coords/Hours]]  . . . September 01, 2012, at 03:07 PM by [[~moench]]: [==]%0a* [[Coords/Coords]]  . . . September 01, 2012, at 02:48 PM by [[~moench]]: [==]%0a
+time=1346530020
